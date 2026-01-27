@@ -1,0 +1,15 @@
+{
+  "name": "teste-playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@types/node": "^25.0.10"
+  },
+  "scripts": {},
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610",
+  "dependencies": {
+    "@faker-js/faker": "^10.2.0"
+  }
+}
