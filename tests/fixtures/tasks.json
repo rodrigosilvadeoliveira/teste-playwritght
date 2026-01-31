@@ -1,0 +1,23 @@
+{
+    "sucess": {
+        "name": "Ler um Livro",
+        "is_done": false
+    },
+    "duplicate": {
+        "name": "Comprar arroz",
+        "is_done": false
+    },
+    "riquered": {
+        "name": "",
+        "is_done": false
+    },
+    "update": {
+        "name": "Pagar a fatura do cartão de crédito",
+        "is_done": false
+    },
+    "delete": {
+        "name": "Estudar Ruby",
+        "is_done": false
+    }
+
+}
