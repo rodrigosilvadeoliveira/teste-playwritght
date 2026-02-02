@@ -1,5 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
-require('dotenv').config()
+
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -12,7 +12,7 @@ require('dotenv').config()
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: './tests',
+  testDir: './e2e',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -30,9 +30,6 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    headless: false,
-    baseURL: process.env.BASE_URL,
-    screenshot: 'on'
   },
 
   /* Configure projects for major browsers */
@@ -53,14 +50,14 @@ export default defineConfig({
     },
 
     /* Test against mobile viewports. */
-    {
-      name: 'Mobile Chrome',
-      use: { ...devices['Pixel 5'] },
-    },
-    {
-      name: 'Mobile Safari',
-      use: { ...devices['iPhone 12'] },
-    },
+    // {
+    //   name: 'Mobile Chrome',
+    //   use: { ...devices['Pixel 5'] },
+    // },
+    // {
+    //   name: 'Mobile Safari',
+    //   use: { ...devices['iPhone 12'] },
+    // },
 
     /* Test against branded browsers. */
     // {
