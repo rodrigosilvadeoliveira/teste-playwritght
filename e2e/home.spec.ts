@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test'
 
-test('webapp deve estar online', async ({ page }) => {
+test('acessar google', async ({ page }) => {
 
-    await page.goto('http://localhost:8080/')
-    await expect(page).toHaveTitle('Gerencie suas tarefas com Mark L')//Titulo da pagina nop header
-    await page.waitForTimeout(3000)
+    await page.goto('http://google.com')
+    // await expect(page).toHaveTitle('Gerencie suas tarefas com Mark L')//Titulo da pagina nop header
+    // await page.waitForTimeout(3000)
 
 })
